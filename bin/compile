@@ -22,7 +22,7 @@ PCRE_VERSION='pcre-8.36'
 source $BIN_DIR/utils
 
 # Install libffi-devel for ensurepip
-apt install libffi-devel
+apt-get install libffi-devel
 
 mkdir -p $BUILD_DIR/local/sbin
 
