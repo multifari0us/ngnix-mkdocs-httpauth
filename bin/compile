@@ -21,6 +21,9 @@ NGINX_VERSION="nginx-1.15.7"
 PCRE_VERSION='pcre-8.36'
 source $BIN_DIR/utils
 
+# Install libffi-devel for ensurepip
+apt install libffi-devel
+
 mkdir -p $BUILD_DIR/local/sbin
 
 if [[ ! -d "$CACHE_DIR/$PYTHON_VERSION" ]]; then
