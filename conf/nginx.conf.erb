@@ -29,8 +29,6 @@ http {
   <% if ENV["MKDOCS_SITEURL"] %>
     server_name <%= require 'uri'; URI.parse(ENV["MKDOCS_SITEURL"]).host %>;
   <% end %>
-    auth_basic           "You shall not pass!!";
-    auth_basic_user_file /app/.htpasswd;
 
     location / {
       expires 10s;
